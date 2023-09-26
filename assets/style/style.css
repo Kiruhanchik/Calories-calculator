@@ -1,0 +1,234 @@
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto-Medium.ttf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 180%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 60%;
+}
+
+header img {
+    width: 7%;
+    margin-left: 2%;
+}
+
+main {
+    width: 100%;
+    padding-top: 3%;
+    margin-bottom: 5%;
+}
+
+p {
+    margin: 0;
+}
+
+#start-window {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    font-size: 120%;
+}
+
+#start-window li {
+    margin-bottom: 3%;
+}
+
+#start {
+    width: 10%;
+    height: 30px;
+    font-size: 80%;
+    border-radius: 10px;
+    background-color: lightgreen;
+    border: 1.5px solid black;
+    transition: 0.5s;
+    box-shadow: 2px 2px 6px black;
+    cursor: pointer;
+}
+
+#start:hover {
+    background-color: rgb(35, 214, 35);
+}
+
+#start:active {
+    transform:scale(0.93);
+}
+
+#main-window {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#add-product {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    font-size: 100%;
+    margin-top: 2%;
+    background-color:greenyellow;
+    border-radius: 5px;
+    border: 1.5px solid black;
+    transition: 0.3s;
+    box-shadow: 2px 2px 6px black;
+    cursor: pointer;
+}
+
+#add-product img {
+    margin-left: 5%;
+}
+
+#add-product:hover {
+    background-color: rgb(42, 228, 42);
+}
+
+#params {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+    width: 100%;
+}
+
+#params input {
+    margin-bottom: 2%;
+    height: 30px;
+    width: 15%;
+    border: 2px solid black;
+    box-shadow: 2px 2px 6px rgb(204, 202, 202);
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 90%;
+}
+
+#create-product {
+    height: 30px;
+    width: 15%;
+    border: 2px solid black;
+    box-shadow: 2px 2px 6px rgb(204, 202, 202);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    background-color: rgba(14, 229, 244, 0.832);
+    font-size: 90%;
+}
+
+#create-product:active {
+    transform: scale(0.93);
+    border: 4px solid black;
+}
+
+#products-container {
+    width: 20%;
+}
+
+.product-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px rgb(184, 181, 181);
+}
+
+.product-block img {
+    width: 60%;
+    margin-top: 2%;
+}
+
+.product-block button {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    width: 40%;
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: rgb(240, 132, 113);
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.product-block button:active {
+    transform: scale(0.96);
+    border: 3px solid black;
+}
+
+.product-block p {
+    margin-bottom: 3%;
+}
+
+.product-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-buttons button {
+    width: 20%;
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: rgb(238, 233, 232);
+    color: black;
+}
+
+.calories {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#edit {
+    cursor: pointer;
+}
+
+#delete-all {
+    margin-top: 1.5%;
+    width: 10%;
+    height: 25px;
+    border: 1.5px solid black;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgba(255, 23, 23, 0.82);
+    color: white;
+    box-shadow: 2px 2px 6px black;
+    font-size: 100%;
+    transition: 0.3s;
+}
+
+#delete-all:active {
+    transform: scale(0.93);
+}
+
+#filter-input {
+    margin-top: 2%;
+    width: 10%;
+    height: 25px;
+    border: 1.5px solid black;
+    cursor: pointer;
+    box-shadow: 2px 2px 6px black;
+    border-radius: 5px;
+}

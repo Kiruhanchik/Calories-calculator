@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <script src="./js/main.js"></script>
+    <title>Сalorie calculator</title>
+</head>
+<body>
+    <header>Сalorie calculator <img src="./assets/img/food-logo.png" alt=""></header>
+    <main>
+        <section id="start-window">
+            <p>Hi, this is calorie calculator!</p>
+            <ul>
+                <li>You can add your products with their calorie</li>
+                <li>Keeping track of calories eaten per day</li>
+                <li>Calorie goal for the day</li>
+                <li>Warnings for exceeding your daily calorie limit</li>
+                <li>Visualization of calories consumed</li>
+                <li><b>Recomendation:</b> write all names of food on english</li>
+            </ul>
+            <button id="start">Start</button>
+        </section>
+        <section id="main-window" style="display: none;">
+            <canvas id="calories-chart"></canvas>
+            <p class="calories" style="margin-top: 2%; display: none;"><b id="edit">✏️</b> Target calories: <b id="target-count" style="color: blue;"></b></p>
+            <p class="calories" style="margin-top: 1%; display: none; margin-bottom: 1%;">Total calories: <b id="total-count" style="color: red;"></b></p>
+            <p style="margin-bottom: 1%;">Your products</p>
+            <p id="empty-products">You don`t have any products</p>
+            <div id="products-container"></div>
+            <button id="add-product">Add product <img src="./assets/img/new-product.png" alt=""></button>
+            <div id="params" style="display: none;">
+                <input type="text" id="name" placeholder="Write name of product">
+                <input type="number" id="calorie" placeholder="Write calories">
+                <button id="create-product">Create product</button>
+            </div>
+            <input type="text" id="filter-input" placeholder="Search by name...">
+            <button id="delete-all">Delete all</button>
+        </section>
+    </main>
+</body>
+</html>
